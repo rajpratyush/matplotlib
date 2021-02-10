@@ -71,7 +71,6 @@ pre {
     border: 1px solid #ccc;
     background-color: #f8f8f8;
     line-height: 140%;
-    overflow-x: auto;
 }
 
 td.linenos pre {
@@ -89,7 +88,7 @@ table.highlighttable td {
     padding: 0 0.5em 0 0.5em;
 }
 
-cite, code, tt, dl.value-list dt {
+cite, code, tt {
     font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size: 0.95em;
     letter-spacing: 0.01em;
@@ -253,7 +252,9 @@ div.sphinxsidebar ul ul {
     list-style: square;
     margin-top: 6px;
     margin-bottom: 6px;
-    margin-left: 16px;
+    margin-left: 24px;
+    white-space: initial;
+    word-wrap: break-word;
 }
 
 div.sphinxsidebar #searchbox input {
@@ -732,6 +733,7 @@ td.field-body table.property-table tr:last-of-type td {
     border-bottom-color: #888;
 }
 
+
 /* function and class description */
 .descclassname {
     color: #aaa;
@@ -805,22 +807,6 @@ dl.class > dd {
 .descname {
     font-family: monospace;
     font-size: 14px;
-}
-
-/* custom tables for lists of allowed values in "mpl._types" */
-dl.value-list {
-    display: grid;
-}
-
-dl.value-list dt {
-    grid-column: 1;
-    margin: 4px 0;
-}
-
-dl.value-list dd {
-    grid-column: 2;
-    margin: 4px 0 4px 20px;
-    padding: 0;
 }
 
 /* parameter section table */
